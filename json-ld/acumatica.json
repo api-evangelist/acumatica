@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://www.acumatica.com/",
+  "name": "Acumatica",
+  "url": "https://www.acumatica.com/",
+  "description": "Acumatica is a cloud ERP platform with a contract-based REST API for managing financial data, inventory, projects, manufacturing, distribution, and business management workflows.",
+  "sameAs": [
+    "https://github.com/Acumatica",
+    "https://www.linkedin.com/company/acumatica",
+    "https://twitter.com/Acumatica"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer support",
+    "url": "https://www.acumatica.com/support/community/"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.acumatica.com/developer-resources/"
+  },
+  "offers": {
+    "@type": "Offer",
+    "name": "Acumatica ERP Pricing",
+    "url": "https://www.acumatica.com/acumatica-erp-pricing/"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Acumatica REST API",
+    "description": "Contract-based REST API providing programmatic access to financial management, order management, inventory, purchasing, project accounting, CRM, and manufacturing modules. Over 200 default endpoints expose business objects versioned by ERP release.",
+    "url": "https://help.acumatica.com/Help?ScreenId=ShowWiki&pageid=ff22837c-cd3a-410e-b768-88ca6e53b165"
+  },
+  "provider": {
+    "@type": "SoftwareApplication",
+    "name": "Acumatica ERP",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Cloud",
+    "url": "https://www.acumatica.com/"
+  }
+}

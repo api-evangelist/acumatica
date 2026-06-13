@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "source": "https://www.acumatica.com/blog/",
+    "fetched": "2026-06-13",
+    "provider": "acumatica"
+  },
+  "posts": [
+    {
+      "title": "Real-Time Inventory Visibility: Keeping Stock Data in Sync",
+      "url": "https://www.acumatica.com/blog/real-time-inventory-visibility-stock-transit-erp/",
+      "date": "2026-06-11",
+      "author": "James Mallory"
+    },
+    {
+      "title": "The Acumatica ERP Podcast Recap: Inside Acumatica's Latest AI-enabled Product Release",
+      "url": "https://www.acumatica.com/blog/the-acumatica-erp-podcast-recap-inside-acumaticas-latest-ai-enabled-product-release/",
+      "date": "2026-06-08",
+      "author": "David De Rego"
+    },
+    {
+      "title": "The Acumatica College Education Program (ACEP): Building a Career in ERP Technology",
+      "url": "https://www.acumatica.com/blog/acumatica-college-education-program-acep-building-career-erp-technology/",
+      "date": "2026-06-03",
+      "author": "Aretha Brooks"
+    },
+    {
+      "title": "Driving Partner Excellence: What to Expect at Ascent 2026",
+      "url": "https://www.acumatica.com/blog/driving-partner-excellence-what-to-expect-ascent-2026/",
+      "date": "2026-06-02",
+      "author": "Sebastian Ilka"
+    },
+    {
+      "title": "Acumatica Customer Eastmen Tire Supplies Drives Growth and Success With Cloud ERP",
+      "url": "https://www.acumatica.com/blog/acumatica-customer-eastmen-tire-supplies-drives-success-cloud-erp/",
+      "date": "2026-06-01",
+      "author": "Tammy Exner"
+    },
+    {
+      "title": "The Acumatica ERP Summit Podcast Recap: Industry Analysts Share Insights on How to Unlock ERP's Full Potential",
+      "url": "https://www.acumatica.com/blog/acumatica-erp-summit-podcast-industry-analysts-share-insights-unlock-erps-full-potential/",
+      "date": "2026-05-28",
+      "author": "Lauren O'Hara"
+    },
+    {
+      "title": "2026 CRN Women of the Channel List Honors Acumatica's Jessica Pidgeon and Aida Mahic",
+      "url": "https://www.acumatica.com/blog/2026-crn-women-of-channel-honors-jessica-pidgeon-aida-mahic/",
+      "date": "2026-05-27",
+      "author": "Sean Chatterjee"
+    },
+    {
+      "title": "How Acumatica's ERP Solution Can Give You a Digital Replica of Your Business",
+      "url": "https://www.acumatica.com/blog/acumaticas-erp-solution-digital-replica/",
+      "date": "2026-05-26",
+      "author": "Sanket Akerkar"
+    },
+    {
+      "title": "Acumatica 2026 R1: Equipping Professional Services Businesses with Vital AI-Powered Features and Insights",
+      "url": "https://www.acumatica.com/blog/acumatica-2026-r1-equipping-professional-services-businesses-vital-ai-powered-insights/",
+      "date": "2026-05-21",
+      "author": "Adelina Basyrova"
+    },
+    {
+      "title": "AI on Your Terms: Managed and Configurable AI",
+      "url": "https://www.acumatica.com/blog/ai-on-your-terms-managed-configurable-ai/",
+      "date": "2026-05-11",
+      "author": "Omar Ghazi"
+    },
+    {
+      "title": "Supporting the Future of Nonprofits: An Interview with Teri Carpenter",
+      "url": "https://www.acumatica.com/blog/supporting-future-nonprofits-interview-teri-carpenter/",
+      "date": "2026-05-12",
+      "author": "Anna Elizabeth Gant"
+    }
+  ]
+}
