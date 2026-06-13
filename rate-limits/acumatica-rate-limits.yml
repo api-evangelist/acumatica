@@ -1,0 +1,57 @@
+name: Acumatica API Rate Limits
+description: >
+  Acumatica ERP REST API rate limits are governed by the purchased license tier
+  rather than fixed published thresholds. Each license includes configurable limits
+  on the number of web services API users, concurrent API requests, and requests
+  per minute. Administrators can view actual limits on the License Monitoring
+  Console (form SM604000). Exceeding any limit results in an error response.
+url: https://help.acumatica.com/(W(1))/Wiki/ShowWiki.aspx?pageid=7a796856-3dec-4a4f-abf8-171324c9642b
+limits:
+  - name: Web Services API Users
+    description: >
+      Maximum number of simultaneous API user sessions allowed concurrently.
+      Each active session consumes one slot. Sessions expire after approximately
+      20 minutes of inactivity. Failing to POST to /entity/auth/logout after
+      operations keeps the session open and counts against the limit.
+    scope: per-license
+    trial_limit: 2
+    notes: Contact Acumatica to increase the limit for your license.
+  - name: Concurrent Web Services API Requests
+    description: >
+      Maximum number of parallel API requests the system will process
+      simultaneously. Requests beyond this threshold are queued or rejected.
+    scope: per-license
+    notes: Visible in License Monitoring Console (SM604000).
+  - name: Requests Per Minute
+    description: >
+      Maximum number of REST API requests allowed per minute across all
+      sessions. Approximate published community guidance is 100 requests/min
+      for standard tiers and 150 requests/min for higher-tier (L-series)
+      licenses, though the official limit is license-specific.
+    scope: per-license
+    approximate_standard: 100 per minute
+    approximate_l_series: 150 per minute
+    notes: >
+      Official thresholds are license-specific and visible in the License
+      Monitoring Console. Contact Acumatica support to adjust limits.
+authentication:
+  methods:
+    - name: OAuth 2.0
+      description: >
+        Recommended for production integrations. Supports scopes including
+        api (standard access), api:concurrent_access (multi-session with cookie
+        management), and api:offline_access (refresh tokens for long-running jobs).
+      recommended: true
+    - name: Cookie-based (Basic Auth)
+      description: >
+        Legacy approach using a POST to the login endpoint with company name,
+        branch, username, and password. Returns session cookies that must be
+        included in all subsequent requests. Sessions expire after 20 minutes
+        of inactivity.
+      recommended: false
+session_management:
+  timeout_minutes: 20
+  logout_endpoint: /entity/auth/logout
+  note: >
+    Always POST to the logout endpoint when done to free up concurrent session
+    slots against the license limit.

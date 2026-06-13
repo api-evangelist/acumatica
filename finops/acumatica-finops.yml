@@ -1,0 +1,78 @@
+name: Acumatica FinOps
+description: >
+  Financial operations guidance for managing Acumatica ERP API costs. Acumatica
+  uses a consumption-based pricing model based on monthly transaction volume rather
+  than per-API-call metering. Cost optimization centers on right-sizing the
+  transaction tier, managing license seat counts, and controlling implementation
+  and module add-on expenses.
+url: https://www.acumatica.com/acumatica-erp-pricing/
+cost_model:
+  type: consumption-based-subscription
+  primary_metric: monthly_transaction_volume
+  metric_definition: >
+    The highest count during the month among: sales orders, shipments, AR invoices,
+    customer payments, purchase orders, receipts, AP bills, and vendor payments.
+  billing_period: annual
+  api_metering: false
+  note: >
+    There is no per-API-call charge. API usage is unlimited within the concurrent
+    session and requests-per-minute limits of the purchased license tier.
+cost_drivers:
+  - name: Subscription Tier
+    description: >
+      The base subscription (Essentials, Select, Prime, Enterprise) is the largest
+      recurring cost. Essentials starts at $6,396/year; upper tiers are custom-quoted.
+    optimization: >
+      Match the tier to your actual peak monthly transaction volume. Avoid
+      over-provisioning by auditing which transaction types count toward the volume
+      calculation.
+  - name: Transaction Volume Overages
+    description: >
+      Additional transaction volume blocks can be purchased when usage exceeds the
+      included monthly allotment.
+    optimization: >
+      Monitor transaction counts monthly via the License Monitoring Console (SM604000).
+      Batch and consolidate operations where possible to reduce transaction counts.
+  - name: Module Add-ons
+    description: >
+      Advanced modules (Payroll, Manufacturing, Construction, Field Services) increase
+      the annual subscription cost beyond the base tier price.
+    optimization: >
+      Enable only the modules actively used. Defer modules until their business
+      processes are operationally ready to avoid paying for unused functionality.
+  - name: Implementation Costs
+    description: >
+      One-time implementation costs range from $60,000 to $125,000+ depending on
+      data migration complexity, customizations, and integrations needed.
+    optimization: >
+      Use Acumatica's standard contract-based REST API integrations instead of
+      screen-based SOAP integrations to reduce long-term maintenance costs.
+      Leverage the Help-and-Training-Examples GitHub repository to accelerate
+      integration development.
+  - name: Concurrent API Sessions
+    description: >
+      Each license tier includes a fixed number of concurrent API user sessions.
+      Exceeding this limit causes integration errors and may require a license
+      upgrade.
+    optimization: >
+      Always call the /entity/auth/logout endpoint after API operations to release
+      sessions immediately. Use OAuth 2.0 with the api:concurrent_access scope and
+      proper cookie management to avoid double-counting sessions. Pool and reuse
+      sessions where possible.
+visibility_tools:
+  - name: License Monitoring Console
+    description: View current API usage, concurrent sessions, requests per minute,
+      and transaction volume against license limits.
+    screen_id: SM604000
+    url: https://help.acumatica.com/
+recommendations:
+  - Audit peak monthly transaction volume quarterly and compare against tier allotment
+    before renewal to right-size the subscription.
+  - Prefer OAuth 2.0 over cookie-based auth to simplify session lifecycle management
+    and reduce risk of session leaks.
+  - Avoid enabling unused modules; activate only when the corresponding business
+    process goes live.
+  - Use the contract-based REST API (versioned endpoints) rather than screen-based
+    APIs to minimize integration rework costs during version upgrades.
+  - Leverage the Acumatica Open University (openuni.acumatica.com) for free developer
+    training to reduce external consulting costs during integration development.

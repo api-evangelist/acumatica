@@ -1,0 +1,93 @@
+name: Acumatica Plans and Pricing
+description: >
+  Acumatica uses a consumption-based subscription pricing model tied to monthly
+  transaction volume rather than per-user fees. All tiers include unlimited user
+  licenses (except Essentials), REST API access, biannual software releases, and
+  ongoing support. Implementation costs are separate and range from $60,000 to
+  $125,000+ depending on complexity.
+url: https://www.acumatica.com/acumatica-erp-pricing/
+plans:
+  - name: Essentials
+    description: >
+      Entry-level tier for small businesses with fewer than 20 employees. Includes
+      up to 5–10 user licenses and 1,000 monthly transactions. Designed for
+      organizations beginning their ERP journey.
+    users: 5-10 user licenses
+    transactions: 1000 per month
+    price:
+      amount: 6396
+      currency: USD
+      period: annual
+    features:
+      - Financial Management
+      - REST API access
+      - Biannual software releases
+      - Support included
+  - name: Select
+    description: >
+      Mid-market tier for companies with fewer than 50 employees. Includes
+      unlimited user licenses and 3,000 monthly transactions.
+    users: Unlimited
+    transactions: 3000 per month
+    price:
+      amount: null
+      currency: USD
+      period: annual
+      note: Contact Acumatica for pricing
+    features:
+      - Financial Management
+      - Distribution Management
+      - REST API access
+      - Biannual software releases
+      - Support included
+  - name: Prime
+    description: >
+      Growth tier for companies with fewer than 200 employees. Includes unlimited
+      user licenses and 3,000 monthly transactions with access to more advanced
+      modules.
+    users: Unlimited
+    transactions: 3000 per month
+    price:
+      amount: null
+      currency: USD
+      period: annual
+      note: Contact Acumatica for pricing
+    features:
+      - Financial Management
+      - Distribution Management
+      - Project Accounting
+      - CRM
+      - REST API access
+      - Biannual software releases
+      - Support included
+  - name: Enterprise
+    description: >
+      Full-featured tier for organizations with 200 or more employees. Includes
+      unlimited user licenses, 7,500 monthly transactions, and access to all
+      industry editions and modules.
+    users: Unlimited
+    transactions: 7500 per month
+    price:
+      amount: null
+      currency: USD
+      period: annual
+      note: Contact Acumatica for pricing
+    features:
+      - Financial Management
+      - Distribution Management
+      - Manufacturing Management
+      - Construction Management
+      - Project Accounting
+      - CRM
+      - Payroll
+      - REST API access
+      - Biannual software releases
+      - Support included
+notes:
+  - Monthly transaction volume is calculated as the highest count among sales orders,
+    shipments, AR invoices, customer payments, purchase orders, receipts, AP bills,
+    and vendor payments during the month.
+  - Additional transaction volume blocks can be purchased beyond included amounts.
+  - Advanced modules (payroll, construction, manufacturing) increase subscription costs.
+  - API access is included in all tiers; rate limits and concurrent sessions are
+    governed by the purchased license tier.
