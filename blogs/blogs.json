@@ -71,5 +71,17 @@
       "date": "2026-05-12",
       "author": "Anna Elizabeth Gant"
     }
-  ]
+  ],
+  "repo": "acumatica",
+  "feeds": [
+    {
+      "source": "https://www.linkedin.com/company/acumatica",
+      "feed_url": "https://www.linkedin.com/company/acumatica",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-06-14T20:42:17Z"
 }
