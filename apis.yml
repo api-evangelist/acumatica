@@ -7,7 +7,7 @@ description: >
   financial management, order management, inventory, purchasing, project accounting,
   and CRM modules. Endpoints are versioned by release (e.g., 24.200.001 for 2024 R2)
   and authenticate via OAuth 2.0 or cookie-based sessions.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/acumatica/refs/heads/main/apis.yml
 created: '2026-06-13'
 modified: '2026-06-13'
@@ -32,7 +32,7 @@ apis:
       accounting, CRM, and manufacturing modules. Over 200 default endpoints expose
       business objects rather than screen fields, ensuring integrations survive
       UI customizations. API versions correspond to Acumatica ERP releases.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://www.acumatica.com/developer-resources/
     baseURL: https://your-instance.acumatica.com
     tags:
