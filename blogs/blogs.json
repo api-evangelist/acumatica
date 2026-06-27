@@ -2,12 +2,20 @@
   "repo": "acumatica",
   "feeds": [
     {
-      "source": "https://www.acumatica.com/blog/",
+      "source": "https://www.acumatica.com/blog/feed/",
       "feed_url": "https://www.acumatica.com/blog/feed/",
-      "title": "Acumatica Blog",
-      "saved": 4
+      "title": "",
+      "saved": 1,
+      "method": "feed"
+    },
+    {
+      "source": "https://www.linkedin.com/company/acumatica",
+      "feed_url": "https://www.linkedin.com/company/acumatica",
+      "title": "",
+      "saved": 0,
+      "method": "none"
     }
   ],
-  "fetched": "2026-06-21T17:00:00Z",
-  "post_count": 4
+  "fetched": "2026-06-27T12:03:07Z",
+  "post_count": 5
 }
