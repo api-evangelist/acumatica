@@ -52,6 +52,8 @@ apis:
       - FN: Acumatica Support
         url: https://www.acumatica.com/support/community/
 common:
+  - type: DomainSecurity
+    url: security/acumatica-domain-security.yml
   - type: Website
     url: https://www.acumatica.com/
   - type: Documentation
