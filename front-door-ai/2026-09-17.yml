@@ -1,0 +1,31 @@
+# Front Door AI Index — acumatica — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: acumatica
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: www.acumatica.com
+  final_host: www.acumatica.com
+  ownership: own
+  owner: acumatica
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 18
+  host_score: 18
+  density: 11.64
+  words: 1547
+  tiers:
+    agentic: 0
+    core: 18
+    model: 0
+  ambiguous: 9
+  top_terms:
+    AI: 11
+    automation: 4
+    intelligence: 4
+    ML: 3
+    artificial intelligence: 3
+    machine learning: 1
+    smart: 1
