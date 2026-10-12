@@ -1,16 +1,32 @@
 generated: '2026-10-12'
-method: none
+method: searched
 source:
 - https://zapier.com/apps/acumatica/integrations
 - https://n8n.io/integrations/acumatica/
 - https://composio.dev/toolkits/acumatica
 - https://monid.ai/tools/acumatica
 checked:
+- https://aws.amazon.com/marketplace/
 - https://composio.dev/toolkits/acumatica
 - https://monid.ai/tools/acumatica
 - https://n8n.io/integrations/acumatica/
 - https://zapier.com/apps/acumatica/integrations
 summary: null
 marketplace_apps: []
-edges: []
+edges:
+- partner_name: AWS Marketplace
+  partner: amazon-web-services
+  partner_match: aggregator
+  type: marketplace
+  marketplace: aws-marketplace
+  channel: distribution
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://aws.amazon.com/marketplace/seller-profile?id=843f091a-8bdd-41fc-a3ba-ec4b92afff63
+  listing_count: 1
+  apps:
+  - Acumatica Cloud ERP
+  seller_name: Acumatica
+  detected_by: sweep-cloud-marketplaces.py
+  detected: '2026-10-13'
 templates: []
