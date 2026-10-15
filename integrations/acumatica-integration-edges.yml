@@ -10,6 +10,9 @@ checked:
 - https://composio.dev/toolkits/acumatica
 - https://monid.ai/tools/acumatica
 - https://n8n.io/integrations/acumatica/
+- https://www.gs1.org/services/gdsn/certified-data-pools-list
+- https://www.gs1us.org/services/find-gs1-us-solution-partner/profiles
+- https://www.spscommerce.com/partner-community/directory/
 - https://zapier.com/apps/acumatica/integrations
 - shopify/integrations/shopify-integration-edges.yml
 summary: null
@@ -46,4 +49,30 @@ edges:
   listing_count: 1
   detected: '2026-10-15'
   detected_by: mirror-platform-listings.py
+- partner_name: SPS Commerce
+  partner: sps-commerce
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: third-party
+  app: Acumatica
+  evidence: https://www.spscommerce.com/partner-community/directory/
+  category: Software Provider
+  contract_reference:
+    register: SPS Commerce partner community directory
+    spec_file: null
+    role: sps-integration-partner
+    registered_name: Acumatica
+    website: http://www.acumatica.com/
+    matched_domain: acumatica.com
+    matched_by: domain
+    business_types:
+    - Software Provider
+    signal_note: 'participation only: a directory listing, never a count'
+    detected_by: sweep-consumer-goods.py
+    detected: '2026-10-15'
+  detected_by: sweep-consumer-goods.py
+  first_seen: '2026-10-15'
 templates: []
