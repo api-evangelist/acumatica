@@ -77,7 +77,7 @@
     - connectors/applications/acumatica
     vendor_link: https://www.acumatica.com/
     builder: Fivetran
-  status: pending-partner-spec
+  status: not-a-workflow
   arazzo: null
 - slug: acumatica-google-workspace-own
   label: Google Workspace (own)
