@@ -6,6 +6,7 @@ source:
 - https://composio.dev/toolkits/acumatica
 - https://monid.ai/tools/acumatica
 checked:
+- google-workspace/integrations/google-workspace-integration-edges.yml
 - https://aws.amazon.com/marketplace/
 - https://composio.dev/toolkits/acumatica
 - https://fivetran.com/docs-sitemap.xml
@@ -103,4 +104,21 @@ edges:
     builder: Fivetran
   detected_by: sweep-data-integration.py
   first_seen: '2026-10-18'
+- partner_name: Google Workspace (own)
+  partner: google-workspace
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://workspace.google.com/marketplace/app/acumatica_for_gmail/980548332619
+  mirror_of: google-workspace/integrations/google-workspace-integration-edges.yml
+  apps:
+  - Acumatica for Gmail™
+  listing_count: 1
+  detected: '2026-10-18'
+  detected_by: mirror-platform-listings.py
+  category: Google Workspace app
 templates: []
