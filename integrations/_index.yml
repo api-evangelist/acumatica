@@ -27,6 +27,19 @@
   relationship: platform-app
   status: not-a-workflow
   arazzo: null
+- slug: acumatica-google-workspace-own
+  label: Google Workspace (own)
+  partner: google-workspace
+  partner_name: Google Workspace (own)
+  category: Google Workspace app
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://workspace.google.com/marketplace/app/acumatica_for_gmail/980548332619
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
 - slug: acumatica-sps-commerce
   label: SPS Commerce
   partner: sps-commerce
@@ -50,7 +63,7 @@
     - Software Provider
     signal_note: 'participation only: a directory listing, never a count'
     detected_by: sweep-consumer-goods.py
-    detected: '2026-10-15'
+    detected: '2026-10-19'
   status: not-a-workflow
   arazzo: null
 - slug: acumatica-fivetran
@@ -77,18 +90,5 @@
     - connectors/applications/acumatica
     vendor_link: https://www.acumatica.com/
     builder: Fivetran
-  status: not-a-workflow
-  arazzo: null
-- slug: acumatica-google-workspace-own
-  label: Google Workspace (own)
-  partner: google-workspace
-  partner_name: Google Workspace (own)
-  category: Google Workspace app
-  type: marketplace
-  marketplace: own
-  channel: partner-built
-  evidence: https://workspace.google.com/marketplace/app/acumatica_for_gmail/980548332619
-  source: edge
-  relationship: platform-app
   status: not-a-workflow
   arazzo: null
